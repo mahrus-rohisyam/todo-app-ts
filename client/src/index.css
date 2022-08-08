@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-lg md:text-2xl
+  }
+  body {
+    font-family: 'Poppins';
+    @apply text-sm md:text-lg w-full
+  }
+  a {
+    @apply text-main-orange hover:text-main-red
+  }
+  li {
+    @apply px-2
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#header {
+  background-color: black;
+}
+
+#navbar {
+  @apply bg-main-black flex justify-around py-3 items-center fixed w-full shadow-lg
+}
+
+#navbar > ul {
+  @apply flex
+}
+
+#navbar > ul > li {
+  @apply p-2 block
+}
+
+#welcome {
+  @apply flex flex-col items-center justify-center
+}
+
+#projects {
+  @apply flex flex-col items-center justify-center py-2 bg-main-orange
+}
+
+
+#about {
+  @apply flex flex-col items-center justify-center text-center
+}
+
+#footer {
+  @apply w-full m-auto bg-main-black py-10 text-center text-main-gray border-t-4 border-sec-orange border-dashed 
+}
+
+.subtitle {
+  @apply text-sm md:text-lg text-main-gray
+}
+
+.description {
+  @apply text-base text-left px-2
+}
+
+.container {
+  @apply min-h-[100vh] max-w-full px-2
+}
+
+.highlight {
+  @apply underline underline-offset-2 decoration-main-orange italic
+}
+
+.social-links {
+  @apply flex flex-wrap justify-between my-5 gap-5 px-5
+}
+
+.social-links > li > a {
+  @apply flex items-center gap-4
+}
